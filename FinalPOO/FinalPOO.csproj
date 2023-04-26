@@ -1,0 +1,405 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C72E6247-18C0-4AB0-AAF8-6748A1507A1F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>FinalPOO</RootNamespace>
+    <AssemblyName>FinalPOO</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clases\Empleado.cs" />
+    <Compile Include="Clases\Operaciones.cs" />
+    <Compile Include="Clases\StreamIO.cs" />
+    <Compile Include="Forms\F01Loging.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\F01Loging.Designer.cs">
+      <DependentUpon>F01Loging.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\F10AEIPDInformacionResidencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\F10AEIPDInformacionResidencia.Designer.cs">
+      <DependentUpon>F10AEIPDInformacionResidencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\F11AEIPDInformacionPatrimonio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\F11AEIPDInformacionPatrimonio.Designer.cs">
+      <DependentUpon>F11AEIPDInformacionPatrimonio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\F12AEINSalarioNeto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\F12AEINSalarioNeto.Designer.cs">
+      <DependentUpon>F12AEINSalarioNeto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\F13AEINPrima.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\F13AEINPrima.Designer.cs">
+      <DependentUpon>F13AEINPrima.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\F14AEINCesantias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\F14AEINCesantias.Designer.cs">
+      <DependentUpon>F14AEINCesantias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\F15AEINVacaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\F15AEINVacaciones.Designer.cs">
+      <DependentUpon>F15AEINVacaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\F02Loging2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\F02Loging2.Designer.cs">
+      <DependentUpon>F02Loging2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\F03VizualisarEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\F03VizualisarEmpleado.Designer.cs">
+      <DependentUpon>F03VizualisarEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\F04UsuarioNoRegistrado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\F04UsuarioNoRegistrado.Designer.cs">
+      <DependentUpon>F04UsuarioNoRegistrado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\F05AgregarEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\F05AgregarEmpleado.Designer.cs">
+      <DependentUpon>F05AgregarEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\F06AEInformacionNominal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\F06AEInformacionNominal.Designer.cs">
+      <DependentUpon>F06AEInformacionNominal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\F07AEInformacionPesonalDetallada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\F07AEInformacionPesonalDetallada.Designer.cs">
+      <DependentUpon>F07AEInformacionPesonalDetallada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\F08AEIPDInformacionBasica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\F08AEIPDInformacionBasica.Designer.cs">
+      <DependentUpon>F08AEIPDInformacionBasica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\F09AEIPDInformacionAcademica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\F09AEIPDInformacionAcademica.Designer.cs">
+      <DependentUpon>F09AEIPDInformacionAcademica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\F16VEInformacionNominal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\F16VEInformacionNominal.Designer.cs">
+      <DependentUpon>F16VEInformacionNominal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\F17VEINInformacionNominal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\F17VEINInformacionNominal.Designer.cs">
+      <DependentUpon>F17VEINInformacionNominal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\F18VEINSalarioNeto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\F18VEINSalarioNeto.Designer.cs">
+      <DependentUpon>F18VEINSalarioNeto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\F19VEINPrima.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\F19VEINPrima.Designer.cs">
+      <DependentUpon>F19VEINPrima.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\F20VEINCesantias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\F20VEINCesantias.Designer.cs">
+      <DependentUpon>F20VEINCesantias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\F21VEINVacaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\F21VEINVacaciones.Designer.cs">
+      <DependentUpon>F21VEINVacaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\F22VEINInformacionPersonalDetallada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\F22VEINInformacionPersonalDetallada.Designer.cs">
+      <DependentUpon>F22VEINInformacionPersonalDetallada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\F23VEINIPDInformacionBasica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\F23VEINIPDInformacionBasica.Designer.cs">
+      <DependentUpon>F23VEINIPDInformacionBasica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\F24VEINIPDInformacionAcademica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\F24VEINIPDInformacionAcademica.Designer.cs">
+      <DependentUpon>F24VEINIPDInformacionAcademica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\F25VEINIPDResidencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\F25VEINIPDResidencia.Designer.cs">
+      <DependentUpon>F25VEINIPDResidencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\F26VEINIPDPatrimonio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\F26VEINIPDPatrimonio.Designer.cs">
+      <DependentUpon>F26VEINIPDPatrimonio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\F01Loging.resx">
+      <DependentUpon>F01Loging.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\F10AEIPDInformacionResidencia.resx">
+      <DependentUpon>F10AEIPDInformacionResidencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\F11AEIPDInformacionPatrimonio.resx">
+      <DependentUpon>F11AEIPDInformacionPatrimonio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\F12AEINSalarioNeto.resx">
+      <DependentUpon>F12AEINSalarioNeto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\F13AEINPrima.resx">
+      <DependentUpon>F13AEINPrima.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\F14AEINCesantias.resx">
+      <DependentUpon>F14AEINCesantias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\F15AEINVacaciones.resx">
+      <DependentUpon>F15AEINVacaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\F02Loging2.resx">
+      <DependentUpon>F02Loging2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\F03VizualisarEmpleado.resx">
+      <DependentUpon>F03VizualisarEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\F04UsuarioNoRegistrado.resx">
+      <DependentUpon>F04UsuarioNoRegistrado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\F05AgregarEmpleado.resx">
+      <DependentUpon>F05AgregarEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\F06AEInformacionNominal.resx">
+      <DependentUpon>F06AEInformacionNominal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\F07AEInformacionPesonalDetallada.resx">
+      <DependentUpon>F07AEInformacionPesonalDetallada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\F08AEIPDInformacionBasica.resx">
+      <DependentUpon>F08AEIPDInformacionBasica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\F09AEIPDInformacionAcademica.resx">
+      <DependentUpon>F09AEIPDInformacionAcademica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\F16VEInformacionNominal.resx">
+      <DependentUpon>F16VEInformacionNominal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\F17VEINInformacionNominal.resx">
+      <DependentUpon>F17VEINInformacionNominal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\F18VEINSalarioNeto.resx">
+      <DependentUpon>F18VEINSalarioNeto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\F19VEINPrima.resx">
+      <DependentUpon>F19VEINPrima.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\F20VEINCesantias.resx">
+      <DependentUpon>F20VEINCesantias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\F21VEINVacaciones.resx">
+      <DependentUpon>F21VEINVacaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\F22VEINInformacionPersonalDetallada.resx">
+      <DependentUpon>F22VEINInformacionPersonalDetallada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\F23VEINIPDInformacionBasica.resx">
+      <DependentUpon>F23VEINIPDInformacionBasica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\F24VEINIPDInformacionAcademica.resx">
+      <DependentUpon>F24VEINIPDInformacionAcademica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\F25VEINIPDResidencia.resx">
+      <DependentUpon>F25VEINIPDResidencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\F26VEINIPDPatrimonio.resx">
+      <DependentUpon>F26VEINIPDPatrimonio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Archivos\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_33.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_34.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_38.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_42.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_35.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_37.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_39.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_41.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_43.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
